@@ -1,0 +1,52 @@
+h1.info a {
+    color: $yellow-d;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+
+.info-cont {
+  min-height: 300px;
+}
+.info-box {
+  // display: flex;
+
+  white-space: pre-wrap;
+      word-wrap: break-word;
+          margin: 15px auto;
+}
+.info-tekst {
+  font-size: 13px;
+  margin: 15px 20px;
+  p {
+    color: rgb(153, 153, 153);
+  }
+}
+
+.modal-content, .modal-header {
+   background-color: $black-g;
+   color: $white;
+}
+
+ .modal-backdrop {
+    // background-color: red;
+ }
+
+ .modal-header {
+     // display: flex;
+     // align-items: center;
+     // justify-content: space-between;
+     // padding: 15px;
+     border-bottom: 1px solid $black-l;
+ }
+
+button.close {
+  color: $white;
+  opacity: .75;
+  &:hover {
+    color: $white;
+    background-color: $transparent !important;
+    opacity: 1
+  }
+}

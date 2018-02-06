@@ -1,0 +1,60 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	box-sizing: border-box;
+	&.front {
+		background-color: $black;
+		color: $white;
+	}
+	&.work {
+		background-color: $white;
+		color: $black;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	/*  Background fallback in case of IE8 & down, or in case video doens't load, such as with slower connections  */
+	background-attachment: fixed;
+	background-size: cover;
+	transition: all .35s ease-out;
+}
+
+
+
+body {
+	background: $black-g;
+  // background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.bg-dark {
+    background-color: $black;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.section-front {
+	height: 65%;
+	&.minimal {
+		height: 91%;
+	}
+}
+
+.front-cont {
+	display: inline-block;
+	img {
+		width: 100%;
+	}
+}

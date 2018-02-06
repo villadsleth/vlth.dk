@@ -1,0 +1,93 @@
+$stroke-w : 10px;
+$stroke-h : 3px;
+$border-r : 0px;
+
+.bg-gallery-nav {
+    display: inline;
+    position: fixed;
+    margin-top: 8px;
+
+    .left-arrow, .right-arrow {
+        display: inline-block;
+        width: $stroke-w*2;
+        height: $stroke-w*2;
+        margin: $stroke-w;
+        transition-property: transform;
+        transition-duration: .2s;
+        transition-timing-function: $ease-out-back;
+        transition-delay: .1s;
+        transform-origin: center center;
+        transform-style: preserve-3d;
+
+    }
+
+    .left-arrow {
+        &::before {
+            content: '';
+            display: block;
+            width: $stroke-w;
+            height: $stroke-h;
+            background-color: $white;
+            border-radius: $border-r;
+            transform: rotate(135deg);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: $stroke-w;
+            height: $stroke-h;
+            margin-top: $stroke-h;
+            background-color: $white;
+            border-radius: $border-r;
+            transform: rotate(45deg);
+        }
+
+        &:hover {
+          transform: translateX(-3px);
+        }
+        &:focus, &:active {
+          transform: opacity(0);
+        }
+    }
+
+    .right-arrow{
+        &::before {
+            content: '';
+            display: block;
+            width: $stroke-w;
+            height: $stroke-h;
+            background-color: $white;
+            border-radius: $border-r;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: $stroke-w;
+            height: $stroke-h;
+            margin-top: $stroke-h;
+            background-color: $white;
+            border-radius: $border-r;
+            transform: rotate(135deg);
+        }
+
+        &:hover {
+          transform: translateX(3px);
+        }
+    }
+
+    a {
+        display: none;
+        @include respond-to(md){
+            display: block;
+        }
+        &.l {
+            left: 0;
+        }
+        &.r {
+            left: 0px;
+        }
+    }
+}

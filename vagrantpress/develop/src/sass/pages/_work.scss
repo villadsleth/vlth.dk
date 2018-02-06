@@ -1,0 +1,6 @@
+.work-thumbs {
+  width: 100%;
+  @include respond-to(xs) {
+    width: 100%;
+  }
+}

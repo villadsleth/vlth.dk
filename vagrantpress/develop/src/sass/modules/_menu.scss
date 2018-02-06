@@ -1,0 +1,110 @@
+.nav-link {
+    display: block;
+    // border-bottom: 1px solid rgb(234, 234, 234);
+    padding: 0px 0px 2px;
+    font-size: 15px;
+    @include respond-to(sm){
+      font-size: 13px;
+    }
+}
+
+.mobile-menu p {
+  opacity: 0;
+  transition: all .35s ease-out;
+  .minimal &{
+      opacity: 1;
+    transition: all .35s ease-out;
+  }
+}
+
+.mobile-menu {
+  background: $transparent;
+  padding-top: 32px;
+  text-align: left;
+  position: fixed;
+  z-index: 1040;
+  left: 170px;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  display: block;
+  @include respond-to(sm){
+    // display: none;
+  }
+}
+
+ul.navbar-nav {
+	li {
+    &:first-child {
+      a {
+        color: $yellow-d;
+      }
+      ul {
+        li {
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+    line-height: 17px;
+		ul {
+      display: block;
+      // transition: all .3s ease-in-out;
+      opacity: 1;
+      padding: 5px 0 5px 10px;
+      position: relative;
+      width: 200px;
+      @include respond-to(sm){
+        // position: absolute;
+
+      }
+      &.hide {
+        opacity: 1;
+        display: block;
+        @include respond-to(sm){
+          // opacity: 0;
+          // display: none;
+        }
+      }
+			li {
+        a {
+          color: $white;
+        }
+			}
+		}
+	}
+}
+
+
+ul.nested-menu {
+  position: relative;
+  left: 5px;
+  top: 0;
+  // @include respond-to(sm){
+  //   position: absolute;
+  //   left: 120px;
+  //   top: -5px;
+  // }
+  li.nav-link.nested a {
+    color: $white !important;
+    &:before {
+      content: '- ';
+    }
+    @include respond-to(sm){
+      &:before {
+        content: '- ';
+      }
+    }
+  }
+}
+
+
+
+.nested-menu-0 {
+  z-index: 5;
+}
+
+.nested-menu-3 {
+  z-index: 3;
+}

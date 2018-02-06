@@ -1,0 +1,108 @@
+.gallery {
+  background: $transparent;
+  color: $black;
+  display: table;
+  height: 100%;
+  margin: 0 auto;
+  overflow: none;
+  width: 100%;
+  @include respond-to(sm) {}
+
+  &__list {
+    display: table;
+    height: 100%;
+    margin: 10px 0 0;
+    position: relative;
+    width: 100%;
+
+    #bgholder1 {
+      background-repeat: no-repeat;
+      height: 1080px;
+      width: 1920px;
+    }
+
+    img {
+      margin: 0;
+      max-height: auto;
+      padding: 0;
+    }
+
+    a {
+      transition-property: transform;
+      transition-duration: .15s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+
+      @include respond-to(sm) {
+        margin: -25px 15px 0;
+      }
+      @include respond-to(md) {
+        margin: -37.5px 30px 0;
+      }
+      transform: scale(1);
+      color: $white;
+      display: block;
+      margin: -15px 15px 0;
+      position: fixed;
+      top: 50%;
+
+      &.right:hover,
+      &:hover {
+        transform: scale(1.3);
+      }
+
+      &.left:hover {
+        transform: scale(1.3);
+      }
+
+      i {
+        &.small {
+          font-size: .8rem;
+        }
+
+        &.medium {
+          font-size: 1rem;
+        }
+
+        &.large {
+          font-size: 1.2rem;
+        }
+      }
+
+      img {
+        @include respond-to(sm) {
+          max-height: 50px;
+        }
+        @include respond-to(md) {
+          max-height: 75px;
+        }
+        max-height: 40px;
+        width: auto;
+      }
+    }
+  }
+}
+
+.roskilde17 {
+
+    background-size: 265px 115px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 265px;
+    height: 115px;
+    margin-bottom: 70px;
+    background-image: url('/wp-content/themes/DenSorteSkoleV2/assets/images/rfgrafik.png');
+    margin: 0 auto 35px;
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      background-image: url('/wp-content/themes/DenSorteSkoleV2/assets/images/rfgrafik_2x.png');
+    }
+}
+
+iframe.facebooked {
+  @include respond-to(sm) {
+    width: 500px;
+    // height: 460px;
+  }
+  width: 250px;
+  // height: 500px;
+}

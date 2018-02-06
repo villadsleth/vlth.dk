@@ -1,0 +1,49 @@
+{
+  "name": "vlthV1",
+  "version": "1.0.0",
+  "description": "vlth Wordpress Theme",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Spiegelberg/vlth.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-contrib-imagemin": "~0.8.1",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-modernizr": "~0.6.0",
+    "grunt-ng-annotate": "^0.7.0",
+    "grunt-notify": "^0.4.5",
+    "grunt-svgmin": "~1.0.0",
+    "grunt-timer": "^0.6.0",
+    "imagemin": "^5.3.1",
+    "load-grunt-tasks": "^1.0.0",
+    "matchdep": "~0.3.0",
+    "modernizr": "~3.1.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.7",
+    "angular-route": "^1.6.6",
+    "angular-sanitize": "^1.6.7",
+    "angular-ui-router": "^0.4.3",
+    "animate-sass": "^0.6.6",
+    "bootstrap": "4.0.0-alpha.6",
+    "bourbon": "^4.3.4",
+    "crypto-js": "^3.1.9-1",
+    "fancybox": "^3.0.0",
+    "font-awesome": "^4.7.0",
+    "fullpage.js": "^2.9.5",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "iframe-resizer": "^3.5.15",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.2"
+  }
+}

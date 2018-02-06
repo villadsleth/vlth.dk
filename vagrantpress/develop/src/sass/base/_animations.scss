@@ -1,0 +1,40 @@
+$animationTime: 0.35s;
+
+.animate {
+  &.ng-enter, &.ng-leave {
+    -webkit-transition: all $animationTime ease-out;
+    -moz-transition: all $animationTime ease-out;
+    -o-transition: all $animationTime ease-out;
+    transition: all $animationTime ease-out;
+  }
+  &.ng-enter {opacity: 0;}
+  &.ng-enter-active {opacity: 1;}
+  &.ng-leave {opacity: 1;}
+  &.ng-leave-active {opacity: 0;}
+}
+
+.animate-left {
+  &:nth-child(n) {
+    transition-delay: .1s;
+  }
+  &.ng-enter, &.ng-leave {
+    -webkit-transition: all $animationTime ease-out;
+    -moz-transition: all $animationTime ease-out;
+    -o-transition: all $animationTime ease-out;
+    transition: all $animationTime ease-out;
+  }
+  &.ng-enter {
+    opacity: 0;
+    margin-left: 10px;
+  }
+  &.ng-enter-active {
+    opacity: 1;
+    margin-left: 0px;
+  }
+  &.ng-leave {
+    opacity: 1;
+  }
+  &.ng-leave-active {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,81 @@
+//breadcrumbs
+
+.woocommerce .woocommerce-breadcrumb {
+	color: $white;
+	display: inline-block;
+	margin: 0;
+	position: inherit;
+	top: -13px;
+	a {
+		color: $white;
+	}
+}
+
+.woocommerce-LoopProduct-link.woocommerce-loop-product__link{
+	min-height: 260px;
+}
+
+.woocommerce-product-gallery__image {
+  margin-bottom: 15px;
+}
+
+.woocommerce-products-header__title.page-title {
+	font-weight: 300;
+}
+
+mark {
+    background-color: $transparent;
+    color: $white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.related-ecom {
+	clear: both;
+	float: left;
+	margin-top: 60px;
+	transition: opacity .3s ease-out;
+	opacity: 0;
+	&.show {
+		opacity: 1;
+	}
+}
+
+.single-product-image-cont {
+	padding-left: 0;
+	padding-right: 0;
+	@include respond-to(md){
+		padding-right: 15px;
+
+	}
+}
+
+.single-product-info-cont {
+	padding-left: 0px;
+	padding-top: 20px;
+	@include respond-to(md){
+		padding-left: 18px;
+		padding-top: 0;
+	}
+}
+
+.woocomerce {
+	& ul.products {
+		& li.product {
+			width: 100% !important;
+			@include respond-to(md){
+				width: 22.05%;
+			}
+		}
+	}
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+	width: 100%;
+	@include respond-to(sm){
+		width: 22.05%;
+	}
+	@include respond-to(md){
+		width: 22.05%;
+	}
+}

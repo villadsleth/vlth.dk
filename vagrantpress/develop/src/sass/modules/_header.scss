@@ -1,0 +1,21 @@
+.navbar.custom {
+  background-color: green;
+  height: 100%;
+  width: 200px;
+  transition: all .45s;
+  // transition-timing-function: ease-out;
+  transition-timing-function: cubic-bezier(0, 0, .58, 1);
+  // transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  @include respond-to(xs){
+    background-color: red;
+
+  }
+  &.minimal {
+    transition: all .4s;
+    // transition-timing-function: ease-in;
+    transition-timing-function: cubic-bezier(.42, 0, 1, 1);
+  }
+  &.active {
+    height: 100%;
+  }
+}
