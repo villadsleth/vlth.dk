@@ -1,52 +1,26 @@
-h1.info a {
-    color: $yellow-d;
-    font-size: 17px;
-    font-weight: 700;
-}
-
-
-
-.info-cont {
-  min-height: 300px;
-}
-.info-box {
-  // display: flex;
-
-  white-space: pre-wrap;
-      word-wrap: break-word;
-          margin: 15px auto;
-}
-.info-tekst {
-  font-size: 13px;
-  margin: 15px 20px;
-  p {
-    color: rgb(153, 153, 153);
+.navbar.custom {
+  background-color: $white;
+  border-right: 1px solid $black;
+  color: $black;
+  height: 100%;
+  width: 20%;
+  transition: all .45s;
+  // transition-timing-function: ease-out;
+  transition-timing-function: cubic-bezier(0, 0, .58, 1);
+  // transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  @include respond-to(xs){
+    background-color: $white;
+  }
+  &.minimal {
+    transition: all .4s;
+    // transition-timing-function: ease-in;
+    transition-timing-function: cubic-bezier(.42, 0, 1, 1);
+  }
+  &.active {
+    height: 100%;
   }
 }
 
-.modal-content, .modal-header {
-   background-color: $black-g;
-   color: $white;
-}
-
- .modal-backdrop {
-    // background-color: red;
- }
-
- .modal-header {
-     // display: flex;
-     // align-items: center;
-     // justify-content: space-between;
-     // padding: 15px;
-     border-bottom: 1px solid $black-l;
- }
-
-button.close {
-  color: $white;
-  opacity: .75;
-  &:hover {
-    color: $white;
-    background-color: $transparent !important;
-    opacity: 1
-  }
+a.navbar-brand {
+  color: $black;
 }

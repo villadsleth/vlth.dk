@@ -3,14 +3,14 @@ html, body {
 	width: 100%;
 	background-size: cover;
 	box-sizing: border-box;
-	&.front {
-		background-color: $black;
-		color: $white;
-	}
-	&.work {
-		background-color: $white;
-		color: $black;
-	}
+	// &.front {
+	// 	background-color: $black;
+	// 	color: $white;
+	// }
+	// &.work {
+	// 	background-color: $white;
+	// 	color: $black;
+	// }
 }
 
 body {
@@ -25,7 +25,8 @@ body {
 
 
 body {
-	background: $black-g;
+	background: $white;
+	color: $black;
   // background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;

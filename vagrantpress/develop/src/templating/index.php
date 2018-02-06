@@ -8,7 +8,7 @@ Template Name: Index
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" ng-app="vlth"> <!--<![endif]-->
+<html class="no-js"> <!--<![endif]-->
 <!--
 
 -->
@@ -35,6 +35,7 @@ Template Name: Index
     //
     </script>
     <!-- css -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
     <?php wp_head(); ?>
   </head>
 
@@ -48,10 +49,9 @@ Template Name: Index
       VLTH.DK
       </a>
       <div class="float-right text-right" style="margin-top:11px">
-
-      <a href="https://instagram.com/villads_leth" target="_blank" >
-      <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-      </a>
+        <!-- <a href="https://instagram.com/villads_leth" target="_blank" >
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a> -->
       </div>
 
       </div>

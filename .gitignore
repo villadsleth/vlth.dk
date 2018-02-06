@@ -1,4 +1,8 @@
+# custom
 .DS_*
+vagrantpress/develop/.sass-ca*
+node_modules
+
 # Logs
 logs
 *.log
