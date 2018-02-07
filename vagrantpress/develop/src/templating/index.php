@@ -8,7 +8,7 @@ Template Name: Index
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" ng-app="vlth"> <!--<![endif]-->
+<html class="no-js" > <!--<![endif]-->
 <!--
 
 -->
@@ -22,6 +22,7 @@ Template Name: Index
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=0">
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44877745-1"></script>
     <script>
     // window.dataLayer = window.dataLayer || [];
@@ -86,6 +87,9 @@ Template Name: Index
 
     <footer id="footer">
       <?php wp_footer(); ?>
+
+
+      </script>
     </footer>
 
   </body>
