@@ -1,7 +1,7 @@
 # custom
 .DS_*
 vagrantpress/develop/.sass-ca*
-node_modules
+node_modules/*
 vagrantpress/develop/.sass-cache/*
 
 # Logs
@@ -64,4 +64,3 @@ typings/
 
 # dotenv environment variables file
 .env
-

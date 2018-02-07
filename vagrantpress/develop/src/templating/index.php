@@ -21,9 +21,13 @@ Template Name: Index
     <!-- meta -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=0">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44877745-1"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="997559513117-ui9gap184okkntdm8f8u1h5tvtsv0tc6.apps.googleusercontent.com">
     <script>
     // window.dataLayer = window.dataLayer || [];
     // function gtag(){dataLayer.push(arguments);}
@@ -49,7 +53,8 @@ Template Name: Index
       <a class="navbar-brand" href="/">
       VLTH.DK
       </a>
-      <div class="float-right text-right" style="margin-top:11px">
+      <div class="float-right text-right" style="margin-top:2px">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <!-- <a href="https://instagram.com/villads_leth" target="_blank" >
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
         </a> -->
