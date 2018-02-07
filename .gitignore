@@ -2,6 +2,7 @@
 .DS_*
 vagrantpress/develop/.sass-ca*
 node_modules
+vagrantpress/develop/.sass-cache/*
 
 # Logs
 logs
