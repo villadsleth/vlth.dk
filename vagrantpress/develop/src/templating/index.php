@@ -1,3 +1,5 @@
+
+
 <?php
 /*
 Template Name: Index
@@ -54,7 +56,25 @@ Template Name: Index
       VLTH.DK
       </a>
       <div class="float-right text-right" style="margin-top:2px">
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <script>
+        var clicked=false;//Global Variable
+        function ClickLogin(){
+          console.log('ClickLogin');
+          clicked=true;
+        }
+        function onSignIn(googleUser) {
+          console.log(googleUser);
+          var elem = $('#googleData');
+          console.log(elem, '!!!');
+
+            if (clicked) {
+                profile = googleUser.getBasicProfile();
+                $('#googleData').css('display', 'block');
+                $('#googleData').css('opacity', '1');
+            }
+        };
+        </script>
+        <div class="g-signin2" data-onsuccess="onSignIn" onclick="ClickLogin()"></div>
         <!-- <a href="https://instagram.com/villads_leth" target="_blank" >
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
         </a> -->
@@ -82,13 +102,32 @@ Template Name: Index
           </div>
           <div class="col-md-2 nopadding text-right" style="float:left; line-height:20px; font-size:13px;margin-top:-4px">
             <div style="display:inline;font-weight: 950;font-size: 115%;color:#e8af00;">
-            <!-- - -->
+
             </div>
           </div>
         </div>
       </div>
     </nav>
+    <div class="" id="googleData" style="color:black;opacity:0">
+      1. user-id
+      <p id="user-id"></p>
+      <br><br>
 
+      2. user-scopes
+      <p id="user-scopes"></p>
+      <br><br>
+
+      3. auth-response
+      <p id="auth-response"></p>
+      <br><br>
+
+      4. signed-in-cell
+      <p id="signed-in-cell"></p>
+      <br><br>
+
+      5. curr-user-cell
+      <p id="curr-user-cell"></p>
+    </div>
 
     <footer id="footer">
       <?php wp_footer(); ?>

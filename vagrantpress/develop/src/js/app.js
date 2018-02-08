@@ -9,6 +9,7 @@ $( document ).ready(function() {
      * Calls startAuth after Sign in V2 finishes setting up.
      */
     var appStart = function() {
+      console.log('appStart');
       gapi.load('auth2', initSigninV2);
     };
 
@@ -16,9 +17,9 @@ $( document ).ready(function() {
      * Initializes Signin v2 and sets up listeners.
      */
     var initSigninV2 = function() {
+      console.log('initSigninV2');
       auth2 = gapi.auth2.init({
-          client_id: '997559513117-ui9gap184okkntdm8f8u1h5tvtsv0tc6.apps.googleusercontent.com',
-          scope: 'profile'
+          client_id: '997559513117-ui9gap184okkntdm8f8u1h5tvtsv0tc6.apps.googleusercontent.com'
       });
 
       // Listen for sign-in state changes.
@@ -65,10 +66,8 @@ $( document ).ready(function() {
     var updateGoogleUser = function () {
       if (googleUser) {
         document.getElementById('user-id').innerText = googleUser.getId();
-        document.getElementById('user-scopes').innerText =
-          googleUser.getGrantedScopes();
-        document.getElementById('auth-response').innerText =
-          JSON.stringify(googleUser.getAuthResponse(), undefined, 2);
+        document.getElementById('user-scopes').innerText = googleUser.getGrantedScopes();
+        document.getElementById('auth-response').innerText = JSON.stringify(googleUser.getAuthResponse(), undefined, 2);
       } else {
         document.getElementById('user-id').innerText = '--';
         document.getElementById('user-scopes').innerText = '--';
@@ -95,5 +94,14 @@ $( document ).ready(function() {
       }
     };
 
+    var elem = $('.g-signin2');
+    console.log(elem);
+    elem.bind('click', function(e){
+      initSigninV2();
+    });
+
+    setTimeout(function () {
+      // initSigninV2();
+    }, 1000);
 
 });
