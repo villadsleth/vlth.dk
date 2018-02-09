@@ -42,10 +42,10 @@ module.exports = function (grunt) {
                 src: [
                     //JQUERY 2.1.3 // wordpress admin page refix
                     '<%= src.jquery %>/jquery.js',
-                    '<%= src.node %>/angular/angular.js',
-                    '<%= src.node %>/angular-ui-router/release/angular-ui-router.js',
-                    '<%= src.node %>/angular-sanitize/angular-sanitize.js',
-                    '<%= src.node %>/angular-animate/angular-animate.js',
+                    // '<%= src.node %>/angular/angular.js',
+                    // '<%= src.node %>/angular-ui-router/release/angular-ui-router.js',
+                    // '<%= src.node %>/angular-sanitize/angular-sanitize.js',
+                    // '<%= src.node %>/angular-animate/angular-animate.js',
                     '<%= src.node %>/tether/dist/js/tether.js',
                     '<%= src.bootstrap %>/bootstrap.js',
                     '<%= src.lodash %>/lodash.js',
