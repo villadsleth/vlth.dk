@@ -40,8 +40,8 @@ function theme_local_scripts() {
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 add_action( 'wp_enqueue_scripts', 'theme_local_scripts' );
 
-$localurl = 'vagrantpress.dev';
-$productionurl = 'marokk.ma';
+$localurl = 'vagrantpress.local';
+$productionurl = 'vlth.dk';
 if($_SERVER['SERVER_NAME'] == $productionurl){
   function theme_prod_scripts() {
     wp_enqueue_style( 'vendor', get_stylesheet_directory_uri()."/vendor.min.css", array(), filemtime(get_stylesheet_directory()."/vendor.min.css"), false);

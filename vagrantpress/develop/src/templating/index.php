@@ -2,7 +2,7 @@
 
 <?php
 /*
-Template Name: Index
+Template Name: Forside
 */
 ?>
 <!DOCTYPE html>
