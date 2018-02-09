@@ -74,10 +74,10 @@ Template Name: Forside
             }
         };
         </script>
-        <div class="g-signin2" data-onsuccess="onSignIn" onclick="ClickLogin()"></div>
-        <!-- <a href="https://instagram.com/villads_leth" target="_blank" >
+        <!-- <div class="g-signin2" data-onsuccess="onSignIn" onclick="ClickLogin()"></div> -->
+        <a href="https://instagram.com/villads_leth" target="_blank" >
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-        </a> -->
+        </a>
       </div>
 
       </div>
@@ -129,12 +129,11 @@ Template Name: Forside
       <p id="curr-user-cell"></p>
     </div>
 
-    <footer id="footer">
-      <?php wp_footer(); ?>
-
-
-      </script>
-    </footer>
-
   </body>
+  <footer id="footer">
+    <?php wp_footer(); ?>
+
+
+    </script>
+  </footer>
 </html>
