@@ -50,15 +50,15 @@ Template Name: Index
       VLTH.DK
       </a>
       <ul class="menu">
-        <li>Dansk</li>
-        <li>Idræt</li>
-        <li>Naturfag</li>
-        <li>Engelsk</li>
-        <li>Tysk</li>
-        <li>Mat</li>
-        <li>Orientering</li>
-        <li>Historie</li>
-        <li>Samfundsfag</li>
+        <li><a href="/dansk">Dansk</a></li>
+        <li><a href="/dansk">Idræt</a></li>
+        <li><a href="/dansk">Naturfag</a></li>
+        <li><a href="/dansk">Engelsk</a></li>
+        <li><a href="/dansk">Tysk</a></li>
+        <li><a href="/dansk">Mat</a></li>
+        <li><a href="/dansk">Orientering</a></li>
+        <li><a href="/dansk">Historie</a></li>
+        <li><a href="/dansk">Samfundsfag</a></li>
       </ul>
       <div class="float-right text-right" style="margin-top:2px">
         <!-- <div class="g-signin2" data-onsuccess="onSignIn" onclick="ClickLogin()"></div> -->
