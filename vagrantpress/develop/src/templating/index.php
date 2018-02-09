@@ -56,25 +56,6 @@ Template Name: Forside
       VLTH.DK
       </a>
       <div class="float-right text-right" style="margin-top:2px">
-        <script>
-        var clicked=false;//Global Variable
-        function ClickLogin(){
-          console.log('ClickLogin');
-          clicked=true;
-        }
-        function onSignIn(googleUser) {
-          console.log(googleUser);
-          var elem = $('#googleData');
-          console.log(elem, '!!!');
-
-            if (clicked) {
-                profile = googleUser.getBasicProfile();
-                $('#googleData').css('display', 'block');
-                $('#googleData').css('opacity', '1');
-            }
-        };
-        </script>
-        <!-- <div class="g-signin2" data-onsuccess="onSignIn" onclick="ClickLogin()"></div> -->
         <a href="https://instagram.com/villads_leth" target="_blank" >
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
         </a>
