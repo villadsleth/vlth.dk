@@ -2,7 +2,7 @@
 
 <?php
 /*
-Template Name: Forside
+Template Name: Index
 */
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,6 @@ Template Name: Forside
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=0">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44877745-1"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
@@ -56,9 +55,28 @@ Template Name: Forside
       VLTH.DK
       </a>
       <div class="float-right text-right" style="margin-top:2px">
-        <a href="https://instagram.com/villads_leth" target="_blank" >
+        <script>
+        var clicked=false;//Global Variable
+        function ClickLogin(){
+          console.log('ClickLogin');
+          clicked=true;
+        }
+        function onSignIn(googleUser) {
+          console.log(googleUser);
+          var elem = $('#googleData');
+          console.log(elem, '!!!');
+
+            if (clicked) {
+                profile = googleUser.getBasicProfile();
+                $('#googleData').css('display', 'block');
+                $('#googleData').css('opacity', '1');
+            }
+        };
+        </script>
+        <div class="g-signin2" data-onsuccess="onSignIn" onclick="ClickLogin()"></div>
+        <!-- <a href="https://instagram.com/villads_leth" target="_blank" >
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-        </a>
+        </a> -->
       </div>
 
       </div>
@@ -110,11 +128,12 @@ Template Name: Forside
       <p id="curr-user-cell"></p>
     </div>
 
+    <footer id="footer">
+      <?php wp_footer(); ?>
+
+
+      </script>
+    </footer>
+
   </body>
-  <footer id="footer">
-    <?php wp_footer(); ?>
-
-
-    </script>
-  </footer>
 </html>

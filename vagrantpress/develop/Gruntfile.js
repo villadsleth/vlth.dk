@@ -46,6 +46,7 @@ module.exports = function (grunt) {
                     '<%= src.node %>/angular-ui-router/release/angular-ui-router.js',
                     '<%= src.node %>/angular-sanitize/angular-sanitize.js',
                     '<%= src.node %>/angular-animate/angular-animate.js',
+                    '<%= src.node %>/tether/dist/js/tether.js',
                     '<%= src.bootstrap %>/bootstrap.js',
                     '<%= src.lodash %>/lodash.js',
                     '<%= src.node %>/fullpage.js/dist/jquery.fullpage.js',
