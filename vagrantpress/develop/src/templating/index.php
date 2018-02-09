@@ -23,22 +23,18 @@ Template Name: Index
     <!-- meta -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, user-scalable=0">
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44877745-1"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="997559513117-ui9gap184okkntdm8f8u1h5tvtsv0tc6.apps.googleusercontent.com">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113884892-1"></script>
     <script>
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // if(location.host.split('.')[1] == 'dk'){
-    // 	gtag('config', 'UA-44877745-1');
-    // } else if (location.host.split('.')[1] == 'com') {
-    //   gtag('config', 'UA-112475191-1');
-    // }
-    //
+    if (location.host.split('.')[1] == 'dk') {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-113884892-1');
+      console.log('production site,Google Analytics init');
+    } else {
+      console.log('not production site, no Analytics added');
+    }
     </script>
     <!-- css -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
@@ -54,6 +50,17 @@ Template Name: Index
       <a class="navbar-brand" href="/">
       VLTH.DK
       </a>
+      <ul class="menu">
+        <li>Dansk</li>
+        <li>Idræt</li>
+        <li>Naturfag</li>
+        <li>Engelsk</li>
+        <li>Tysk</li>
+        <li>Mat</li>
+        <li>Orientering</li>
+        <li>Historie</li>
+        <li>Samfundsfag</li>
+      </ul>
       <div class="float-right text-right" style="margin-top:2px">
         <script>
         var clicked=false;//Global Variable
@@ -100,7 +107,7 @@ Template Name: Index
           <div class="col-md-8 nopadding" style="float:left">
           </div>
           <div class="col-md-2 nopadding text-right" style="float:left; line-height:20px; font-size:13px;margin-top:-4px">
-            <div style="display:inline;font-weight: 950;font-size: 115%;color:#e8af00;">
+            <div style="display:inline;font-weight: 950;font-size: 115%;color:#white;">
 
             </div>
           </div>
