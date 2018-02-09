@@ -53,6 +53,17 @@ Template Name: Forside
       <a class="navbar-brand" href="/">
       VLTH.DK
       </a>
+      <ul class="menu">
+        <li>Dansk</li>
+        <li>Idræt</li>
+        <li>Naturfag</li>
+        <li>Engelsk</li>
+        <li>Tysk</li>
+        <li>Mat</li>
+        <li>Orientering</li>
+        <li>Historie</li>
+        <li>Samfundsfag</li>
+      </ul>
       <div class="float-right text-right" style="margin-top:2px">
         <a href="https://instagram.com/villads_leth" target="_blank" >
         <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
@@ -80,7 +91,7 @@ Template Name: Forside
           <div class="col-md-8 nopadding" style="float:left">
           </div>
           <div class="col-md-2 nopadding text-right" style="float:left; line-height:20px; font-size:13px;margin-top:-4px">
-            <div style="display:inline;font-weight: 950;font-size: 115%;color:#e8af00;">
+            <div style="display:inline;font-weight: 950;font-size: 115%;color:#white;">
 
             </div>
           </div>
