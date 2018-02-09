@@ -95,26 +95,9 @@ Template Name: Index
         </div>
       </div>
     </nav>
-    <div class="" id="googleData" style="color:black;opacity:0">
-      1. user-id
-      <p id="user-id"></p>
-      <br><br>
+    <section class="main-view">
 
-      2. user-scopes
-      <p id="user-scopes"></p>
-      <br><br>
-
-      3. auth-response
-      <p id="auth-response"></p>
-      <br><br>
-
-      4. signed-in-cell
-      <p id="signed-in-cell"></p>
-      <br><br>
-
-      5. curr-user-cell
-      <p id="curr-user-cell"></p>
-    </div>
+    </section>
 
     <footer id="footer">
       <?php wp_footer(); ?>
