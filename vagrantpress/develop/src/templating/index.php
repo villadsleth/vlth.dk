@@ -51,14 +51,14 @@ Template Name: Index
       </a>
       <ul class="menu">
         <li><a href="/dansk">Dansk</a></li>
-        <li><a href="/dansk">Idræt</a></li>
-        <li><a href="/dansk">Naturfag</a></li>
-        <li><a href="/dansk">Engelsk</a></li>
-        <li><a href="/dansk">Tysk</a></li>
-        <li><a href="/dansk">Mat</a></li>
-        <li><a href="/dansk">Orientering</a></li>
-        <li><a href="/dansk">Historie</a></li>
-        <li><a href="/dansk">Samfundsfag</a></li>
+        <li><a href="/idræt">Idræt</a></li>
+        <li><a href="/naturfag">Naturfag</a></li>
+        <li><a href="/engelsk">Engelsk</a></li>
+        <li><a href="/tysk">Tysk</a></li>
+        <li><a href="/mat">Mat</a></li>
+        <li><a href="/orientering">Orientering</a></li>
+        <li><a href="/historie">Historie</a></li>
+        <li><a href="/samfundsfag">Samfundsfag</a></li>
       </ul>
       <div class="float-right text-right" style="margin-top:2px">
         <!-- <div class="g-signin2" data-onsuccess="onSignIn" onclick="ClickLogin()"></div> -->
