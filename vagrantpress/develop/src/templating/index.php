@@ -26,20 +26,18 @@ Template Name: Forside
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-44877745-1"></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
-    <meta name="google-signin-client_id" content="997559513117-ui9gap184okkntdm8f8u1h5tvtsv0tc6.apps.googleusercontent.com">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113884892-1"></script>
     <script>
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // if(location.host.split('.')[1] == 'dk'){
-    // 	gtag('config', 'UA-44877745-1');
-    // } else if (location.host.split('.')[1] == 'com') {
-    //   gtag('config', 'UA-112475191-1');
-    // }
-    //
+    if (location.host.split('.')[1] == 'dk') {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-113884892-1');
+      console.log('production site,Google Analytics init');
+    } else {
+      console.log('not production site, no Analytics added');
+    }
     </script>
     <!-- css -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.min.js"></script>

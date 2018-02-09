@@ -1,4 +1,4 @@
 $( document ).ready(function() {
-    console.log('vlth.dk');
+    console.log('VLTH.DK');
     console.log( "ready!" );
 });
